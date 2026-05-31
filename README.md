@@ -40,7 +40,7 @@ Log in cmslpc:
 ssh -L localhost:9999:localhost:9999 username@cmslpc-el9.fnal.gov
 ```
 
-Skip this chunk if you already have CMSSW in your working directory
+## Skip this chunk if you already have CMSSW in your working directory
 ===================================================================================
 \[Do only once] Setup CMSSW environment (execute the following ONLY IF you do not have CMSSW_XX_X_X/ in your working directory):
 ```
@@ -64,6 +64,42 @@ cmsenv
 ```
 git clone https://github.com/Ari-mu-l/software-carpentry.git
 cd software-carpentry/
+```
+
+Start Jupyter with this command:
+```
+jupyter notebook --port 9999 --ip 127.0.0.1 --no-browser
+```
+
+After a pause (while cmslpc loads the necessary libraries for the first time) you should see a message like the following:
+```
+[I 17:05:38.373 NotebookApp] Serving notebooks from local directory: /uscms_data/d3/xshen/CMSSW_13_3_3/src
+[I 17:05:38.373 NotebookApp] Jupyter Notebook 6.4.10 is running at:
+[I 17:05:38.373 NotebookApp] http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+[I 17:05:38.373 NotebookApp]  or http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+[I 17:05:38.373 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[C 17:05:38.381 NotebookApp] 
+    
+    To access the notebook, open this file in a browser:
+        file:///uscms/homes/x/xshen/.local/share/jupyter/runtime/nbserver-15675-open.html
+    Or copy and paste one of these URLs:
+        http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+     or http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+```
+
+Copy and paste the last line (`http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX`) to your browser, which opens up a window to Jupyter notebook.
+
+## Alternate Set-up
+
+\[Do only once] Fetch the code and exercises from this github repository:
+```
+git clone https://github.com/Ari-mu-l/software-carpentry.git
+cd software-carpentry/
+```
+
+\[Do eyerytime] In ```software-carpentry``` directory:
+```
+source /cvmfs/sft.cern.ch/lcg/views/LCG_103cuda/x86_64-centos9-gcc11-opt/setup.sh
 ```
 
 Start Jupyter with this command:
