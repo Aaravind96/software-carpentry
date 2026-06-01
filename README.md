@@ -62,7 +62,7 @@ cmsenv
 
 \[Do only once] Fetch the code and exercises from this github repository:
 ```
-git clone https://github.com/Ari-mu-l/software-carpentry.git
+git clone https://github.com/Aaravind96/software-carpentry.git
 cd software-carpentry/
 ```
 
@@ -93,7 +93,7 @@ Copy and paste the last line (`http://127.0.0.1:9999/?token=XXXXXXXXXXXXXXXXXXXX
 
 \[Do only once] Fetch the code and exercises from this github repository:
 ```
-git clone https://github.com/Ari-mu-l/software-carpentry.git
+git clone https://github.com/Aaravind96/software-carpentry.git
 cd software-carpentry/
 ```
 
